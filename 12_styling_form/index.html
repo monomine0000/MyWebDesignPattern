@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Styling Form</title>
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <form id="signup"  action="#" method="post">
+      <h2>注册</h2>
+      <h3>同意协议</h3>
+      <h4>感兴趣推荐</h4>
+      <input id="cat-d" type="checkbox" name="design"><label for="cat-d">设计</label><br />
+      <input id="cat-h" type="checkbox" name="html-css"><label for="cat-h">HTML &amp;CSS</label><br />
+      <input id="cat-j" type="checkbox" name="js"><label for="cat-j">JavaScript</label><br />
+
+      <fieldset>
+        <legend>选项</legend>
+        <h4>选择方式</h4>
+        <input id="format-t" type="radio" name="format"><label for="format-t">只是文本</label><br/>
+        <input id="format-h" type="radio" name="format"><label for="format-h">HTML(带图片)</label>
+        <h4>选择频度</h4>
+        <select id="frequency">
+          <option value="daily">每天</option>
+          <option value="weekly">每周</option>
+          <option value="monthly">每月</option>
+        </select>
+        <br />
+      </fieldset>
+    </form>
+  </body>
+</html>

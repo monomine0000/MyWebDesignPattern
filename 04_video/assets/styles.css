@@ -1,0 +1,97 @@
+/*  CSS Document                             */
+body { background-color: #45180a; }
+
+.promo {
+  position: relative;
+  margin: 40px;
+  font-size: 16px;
+  font-family: "Indie Flower",cursive;
+}
+
+/* 宽度百分百 ，边线1px*/
+.promo video{
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+/* 图片居中 */
+.promo img{
+  width: 160px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* 让文字距离底部60px */
+.promo .caption {
+  position: absolute;
+  left: 1px;
+  bottom: 60px;
+  background-color: rgba(69,24,10,.8);
+  width: 100%;
+}
+
+/* 改变文字样式 */
+.promo .caption p{
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* 响应式布局 width=700才会生效*/
+@media screen and (max-width: 700){
+  .promo img {
+    top: 15px;
+    width: 120px;
+    margin-left: -60px;
+  }
+
+  .promo .caption p {
+    font-size: 2em;
+    line-height: 22px;
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .promo {
+    margin: 15px;
+    paddiing: 175px 0px 40px 0px;
+    border: 1px solid #fff;
+    background: url(muffins.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
+
+  .promo video{ display: none;}
+  .promo img {
+    top: 15px;
+    width: 90px;
+    margin-left: -45px;
+  }
+  .promo .caption{
+    position: static;
+  }
+  .promo .caption p{
+    font-size: 1.4em;
+    line-height: 22px;
+    paddiing: 10px 0px;
+  }
+  .touch .promo { min-height: inherit; }
+}
+
+
+.touch .promo {
+  min-height: 500px;
+  border: 1px solid #fff;
+  background: url(muffins.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.touch .promo video {
+  display: none;
+}

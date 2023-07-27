@@ -1,0 +1,58 @@
+body{
+  padding: 70px 0px 0px 65px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  background: #420d20 url(background_bokeh.jpg) no-repeat 0px 0px;
+}
+
+nav{ width: 225px;}
+
+a.btn{
+  display: inline-block;;
+  border: 1px solid rgba(255,255,255,.5);
+  padding: 5px 20px 5px 10px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 0px 0px 10px 0px;
+  color: #fff;
+  width: 200px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  line-height: 26px;
+}
+
+a.btn:hover{
+  background-color:rgba(255,255,255, .4);
+  border-color: #fff;
+  border-left-width: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  letter-spacing: 8px;
+  font-size: 1.1em;
+  text-shadow: 0px 3px 2px #fc2add;
+}
+
+a.btn:after{
+  content:'';
+  display: block;
+  width: 10px;
+  height: 100px;
+  background-color: #fcba68;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  transition: left .5s;
+}
+
+
+#gallery a {
+  margin-top: 300px;
+  position: absolute;
+  clip: rect(10px,65px,65px,10px);
+}
+
+#gallery a:hover{
+  clip:rect(0px,75px,75px,0px);
+}

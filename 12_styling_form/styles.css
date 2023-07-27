@@ -1,0 +1,82 @@
+body{
+  font-size: 16px;
+  font-family: "Montserrat",sans-serif;
+  background-color: #fff;
+}
+
+form#signup{
+  max-width: 800px;
+  padding: 15px;
+  background: #5890d0 no-repeat 0px -70px;
+}
+
+form#signup h2{
+  margin: 0px; color: #fff; font-size: 2em;
+}
+
+form#signup h3{
+  margin: -5px 0px 12px 0px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+form#signup h4{
+  margin: 15px 0px 3px 0px;
+  color: #fff;
+  font-size: 1em;
+}
+
+form#signup p,form#signup label{
+  margin: 0px 0px 6px 0px;
+  color: rgba(255,255,255,.8);
+}
+
+form#signup fieldset{
+  border:1px solid rgba(255,255,255,.4);
+  margin: 15px 0px 15px 0px;
+  padding: 0px 10px 10px 20px;
+}
+
+form#signup legend{
+  color: #254581;
+  font-size:.9em;
+}
+form#signup textarea{
+  font-size:.9em;
+  padding: 5px;
+  border: none;
+  color: #264581;
+  background-color: rgba(255,255,255,.8);
+  width: 80%;
+}
+
+form#signup textarea:focus{
+  background-color:#fff;
+}
+
+form#signup select{
+  -webkit-appearance:none;
+  appearance:none;
+  form-size: .9em;
+  background: #588fd0 no-repeat right 8px;
+  color: #ffd34c;
+  padding: 7px 45px 7px 10px;
+  border: 1px solid #fff;
+}
+
+form#signup input[type=checkbox],form#signup input[type=radio]{
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+form#signup input[type=checkbox] + label,
+form#signup input[type=radio] + label{
+  display: inline-block;
+  margin-left: -20px;
+  padding: 4px 0px 0px 27px;
+  background-size: 20px 80px;
+  line-height: 16px;
+  
+}

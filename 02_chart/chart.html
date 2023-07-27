@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn Chart</title>
+    <style>
+    body{
+      background-color: #e3c598;
+    }
+    .piechart {
+		margin: 50px;
+		position: relative;
+		height: 300px; width: 300px;
+		background-color: transparent;
+	}
+    .common{
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+    }
+
+    .border{
+      border:3px solid #5f6a2f;
+      top: -6px;
+      left: -6px;
+      width: 306px;
+      height: 306px;
+    }
+    .base{
+      background:#000 url(photo.jpg) no-repeat 0 0;
+    }
+    .slice{
+      clip:rect(0px,150px,300px,0px);
+    }
+
+    .slice_1_c {
+		transform: rotate(100deg);
+	}
+  .slice_1_w{
+    background-color:rgba(210,0,13,.7);
+    transform:rotate(115deg);
+  }
+  .slice_2_c {
+  transform: rotate(118deg);
+}
+.slice_2_w {
+  background-color: rgba(210,104,0,.8);
+  transform: rotate(162deg);
+}
+
+p.label {
+		color: #5f6a2f; font-weight: bold;
+		font-family: arial; text-align: right;
+		position: absolute; left: 260px;
+		border-bottom: 2px solid rgba(255,255,255,.5);
+		padding: 0px 0px 0px 60px;
+		width: 100px;
+	}
+.slice_1_label{top:90px;}
+.slice_2_label{top:150px;}
+    </style>
+  </head>
+  <body>
+    <div class="piechart">
+      <div class="common border"></div>
+      <div class="common base"></div>
+      <div class="common slice slice_1_c">
+        <div class="common slice slice_1_w"></div>
+      </div>
+      <div class="common slice slice_2_c">
+        <div class="common slice slice_2_w"></div>
+      </div>
+      <p class="label slice_1_label">标签一</p>
+      <p class="label slice_2_label">标签二</p>
+    </div>
+  </body>
+</html>
